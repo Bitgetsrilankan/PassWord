@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #444;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+label {
+    margin-right: 30px; /* Adds a gap between label and theme toggle */
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: #e8491d;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #ff5722;
+}
+
+#password-output {
+    margin-top: 15px;
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+#copy-btn {
+    background-color: #3cba54;
+}
+
+#copy-btn:hover {
+    background-color: #34a853;
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+.light-mode body {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.light-mode .container {
+    background-color: #fff;
+    color: #333;
+}
+
+.light-mode #theme-toggle {
+    color: #333;
+}
